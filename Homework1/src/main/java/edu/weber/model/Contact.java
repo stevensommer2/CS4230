@@ -21,12 +21,28 @@ public class Contact implements Serializable{
 	private String city2;
 	
 	public Contact() {
-		this(null, null);
+		this(null, null,null,null,null,null,null,null,null,null,null,null,null);
 	}
+	
+	
 
-	public Contact(String fn, String ln) {
+	public Contact(String fn, String ln, String pn, String addressType1,
+			String addressType2, String addressA1, String addressA2, 
+			String addressB1, String addressB2, String zip1, String zip2,
+			String city1, String city2) {
 		this.firstName = fn;
 		this.lastName = ln;
+		this.phoneNumber = pn;
+		this.addressType1 = addressType1;
+		this.addressType2 = addressType2;
+		this.addressA1 = addressA1;
+		this.addressA2 = addressA2;
+		this.addressB1 = addressB1;
+		this.addressB2 = addressB2;
+		this.zip1 = zip1;
+		this.zip2 = zip2;
+		this.city1 = city1;
+		this.city2 = city2;
 	}
 
 	public String getFirstName() {
@@ -86,7 +102,7 @@ public class Contact implements Serializable{
 	}
 	
 	public String getAddressB1() {
-		return addressA1;
+		return addressB1;
 	}
 
 	public void setAddressB1(String addressb1) {
@@ -131,6 +147,10 @@ public class Contact implements Serializable{
 
 	public void setCity2(String city2) {
 		this.city2 = city2;
+	}
+	
+	public void createContactList() {
+		
 	}
 	
 	
